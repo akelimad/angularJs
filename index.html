@@ -2,16 +2,18 @@
 <html>
 <head>
 	<title>test angular js</title>
-	
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="monapp">
+
+	<div class="container">
+		<div ng-view></div>
+	</div>	
 	
-	<div class="container" ng-controller="monctrl">
-        <input type="text" ng-model="name" />
-	    <h1>Hello, {{name}} </h1>
-	</div>
-	
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
